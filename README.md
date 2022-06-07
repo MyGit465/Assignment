@@ -4,14 +4,6 @@ login as: ec2-user
 [ec2-user@ip-172-31-28-6 ~]$ sudo su -
 
 [root@ip-172-31-28-6 ~]# git clone https://github.com/ashishrpandey/example-voting-app
-Cloning into 'example-voting-app'...
-remote: Enumerating objects: 494, done.
-remote: Total 494 (delta 0), reused 0 (delta 0), pack-reused 494
-Receiving objects: 100% (494/494), 236.17 KiB | 1.02 MiB/s, done.
-Resolving deltas: 100% (179/179), done.
-[root@ip-172-31-28-6 ~]# ls
-example-voting-app  firstchart  get_helm.sh  istio-1.5.2  istio-1.5.2-linux.tar.gz  kubernetes-training  voting_Application
-
 [root@ip-172-31-28-6 k8s-specifications]# kubectl apply -f .
 deployment.apps/db created
 service/db created
@@ -22,12 +14,6 @@ service/result created
 deployment.apps/vote created
 service/vote created
 deployment.apps/worker created
-
-[root@ip-172-31-28-6 k8s-specifications]# ls
-db-deployment.yaml  redis-deployment.yaml  result-deployment.yaml  vote-deployment.yaml  worker-deployment.yaml
-db-service.yaml     redis-service.yaml     result-service.yaml     vote-service.yaml
-[root@ip-172-31-28-6 k8s-specifications]# vi result-service.yaml
-[root@ip-172-31-28-6 k8s-specifications]# vi vote-service.yaml
 
 [root@ip-172-31-28-6 k8s-specifications]# kubectl get svc
 NAME     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
