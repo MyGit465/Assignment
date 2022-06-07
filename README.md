@@ -1,4 +1,4 @@
-# Assignment
+# Assignment 4
 
 1.login as: ec2-user
 
@@ -49,7 +49,17 @@ vote     NodePort    10.109.151.178   <none>        5000:31000/TCP   3m47s
 -------------------------------------------------------
   
   
-
+  
+  
+  
+  # Assignment. 1
+   
+   if we want to have one copy of pod per node then we have to use DemonSet otherwise we have use ReplicaSet
+   and we also use Replica Set By using ReplicaSet=1....
+  
+  
+   
+   
   
   
   
