@@ -4,7 +4,11 @@ login as: ec2-user
 [ec2-user@ip-172-31-28-6 ~]$ sudo su -
 
 [root@ip-172-31-28-6 ~]# git clone https://github.com/ashishrpandey/example-voting-app
+
+
 [root@ip-172-31-28-6 k8s-specifications]# kubectl apply -f .
+
+
 [root@ip-172-31-28-6 k8s-specifications]# kubectl get svc
 NAME     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
 db       ClusterIP   10.97.84.93      <none>        5432/TCP         3m48s
