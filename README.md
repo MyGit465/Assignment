@@ -5,16 +5,6 @@ login as: ec2-user
 
 [root@ip-172-31-28-6 ~]# git clone https://github.com/ashishrpandey/example-voting-app
 [root@ip-172-31-28-6 k8s-specifications]# kubectl apply -f .
-deployment.apps/db created
-service/db created
-deployment.apps/redis created
-service/redis created
-deployment.apps/result created
-service/result created
-deployment.apps/vote created
-service/vote created
-deployment.apps/worker created
-
 [root@ip-172-31-28-6 k8s-specifications]# kubectl get svc
 NAME     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
 db       ClusterIP   10.97.84.93      <none>        5432/TCP         3m48s
